@@ -2,42 +2,42 @@ export const navLinks = [
   {
     label: 'Home',
     route: '/',
-    icon: 'public/assets/icons/home.svg',
+    icon: '/assets/icons/home.svg',
   },
   {
     label: 'Image Restore',
     route: '/transformations/add/restore',
-    icon: 'public/assets/icons/image.svg',
+    icon: '/assets/icons/image.svg',
   },
   {
     label: 'Generative Fill',
     route: '/transformations/add/fill',
-    icon: 'public/assets/icons/stars.svg',
+    icon: '/assets/icons/stars.svg',
   },
   {
     label: 'Object Remove',
     route: '/transformations/add/remove',
-    icon: 'public/assets/icons/scan.svg',
+    icon: '/assets/icons/scan.svg',
   },
   {
     label: 'Object Recolor',
     route: '/transformations/add/recolor',
-    icon: 'public/assets/icons/filter.svg',
+    icon: '/assets/icons/filter.svg',
   },
   {
     label: 'Background Remove',
     route: '/transformations/add/removeBackground',
-    icon: 'public/assets/icons/camera.svg',
+    icon: '/assets/icons/camera.svg',
   },
   {
     label: 'Profile',
     route: '/profile',
-    icon: 'public/assets/icons/profile.svg',
+    icon: '/assets/icons/profile.svg',
   },
   {
     label: 'Buy Credits',
     route: '/credits',
-    icon: 'public/assets/icons/bag.svg',
+    icon: '/assets/icons/bag.svg',
   },
 ];
 
@@ -45,7 +45,7 @@ export const plans = [
   {
     _id: 1,
     name: 'Free',
-    icon: 'public/assets/icons/free-plan.svg',
+    icon: '/assets/icons/free-plan.svg',
     price: 0,
     credits: 20,
     inclusions: [
@@ -70,7 +70,7 @@ export const plans = [
   {
     _id: 2,
     name: 'Pro Package',
-    icon: 'public/assets/icons/free-plan.svg',
+    icon: '/assets/icons/free-plan.svg',
     price: 40,
     credits: 120,
     inclusions: [
@@ -95,7 +95,7 @@ export const plans = [
   {
     _id: 3,
     name: 'Premium Package',
-    icon: 'public/assets/icons/free-plan.svg',
+    icon: '/assets/icons/free-plan.svg',
     price: 199,
     credits: 2000,
     inclusions: [
