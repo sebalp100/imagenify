@@ -1,13 +1,13 @@
-import { auth } from "@clerk/nextjs";
-import Image from "next/image";
-import Link from "next/link";
+import { auth } from '@clerk/nextjs';
+import Image from 'next/image';
+import Link from 'next/link';
 
-import Header from "@/components/shared/Header";
-import TransformedImage from "@/components/shared/TransformedImage";
-import { Button } from "@/components/ui/button";
-import { getImageById } from "@/lib/actions/image.actions";
-import { getImageSize } from "@/lib/utils";
-import { DeleteConfirmation } from "@/components/shared/DeleteConfirmation";
+import Header from '@/components/shared/Header';
+import TransformedImage from '@/components/shared/TransformedImage';
+import { Button } from '@/components/ui/button';
+import { getImageById } from '@/lib/actions/image.actions';
+import { getImageSize } from '@/lib/utils';
+import { DeleteConfirmation } from '@/components/shared/DeleteConfirmation';
 
 const ImageDetails = async ({ params: { id } }: SearchParamProps) => {
   const { userId } = auth();
@@ -21,9 +21,7 @@ const ImageDetails = async ({ params: { id } }: SearchParamProps) => {
       <section className="mt-5 flex flex-wrap gap-4">
         <div className="p-14-medium md:p-16-medium flex gap-2">
           <p className="text-dark-600">Transformation:</p>
-          <p className=" capitalize text-purple-400">
-            {image.transformationType}
-          </p>
+          <p className=" capitalize text-sky-600">{image.transformationType}</p>
         </div>
 
         {image.prompt && (
@@ -31,7 +29,7 @@ const ImageDetails = async ({ params: { id } }: SearchParamProps) => {
             <p className="hidden text-dark-400/50 md:block">&#x25CF;</p>
             <div className="p-14-medium md:p-16-medium flex gap-2 ">
               <p className="text-dark-600">Prompt:</p>
-              <p className=" capitalize text-purple-400">{image.prompt}</p>
+              <p className=" capitalize text-sky-600">{image.prompt}</p>
             </div>
           </>
         )}
@@ -41,7 +39,7 @@ const ImageDetails = async ({ params: { id } }: SearchParamProps) => {
             <p className="hidden text-dark-400/50 md:block">&#x25CF;</p>
             <div className="p-14-medium md:p-16-medium flex gap-2">
               <p className="text-dark-600">Color:</p>
-              <p className=" capitalize text-purple-400">{image.color}</p>
+              <p className=" capitalize text-sky-600">{image.color}</p>
             </div>
           </>
         )}
@@ -51,7 +49,7 @@ const ImageDetails = async ({ params: { id } }: SearchParamProps) => {
             <p className="hidden text-dark-400/50 md:block">&#x25CF;</p>
             <div className="p-14-medium md:p-16-medium flex gap-2">
               <p className="text-dark-600">Aspect Ratio:</p>
-              <p className=" capitalize text-purple-400">{image.aspectRatio}</p>
+              <p className=" capitalize text-sky-600">{image.aspectRatio}</p>
             </div>
           </>
         )}
@@ -64,8 +62,8 @@ const ImageDetails = async ({ params: { id } }: SearchParamProps) => {
             <h3 className="h3-bold text-dark-600">Original</h3>
 
             <Image
-              width={getImageSize(image.transformationType, image, "width")}
-              height={getImageSize(image.transformationType, image, "height")}
+              width={getImageSize(image.transformationType, image, 'width')}
+              height={getImageSize(image.transformationType, image, 'height')}
               src={image.secureURL}
               alt="image"
               className="transformation-original_image"
