@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![logo-text](https://github.com/sebalp100/imagenify/assets/111214189/df484752-da9d-47d9-8ccd-e31e69c4fec4)
+![snap](https://github.com/sebalp100/imagenify/assets/111214189/cf63c536-c1f6-436a-95e7-bc386f6cdbd2)
 
 
 </div>
@@ -29,7 +29,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Imaginify<a name="about-project"></a>
+# 📖 SnapShift<a name="about-project"></a>
 
 This SaaS app allows users to edit images using IA. User can perform actions like restore, remove background, add color, etc.
 
