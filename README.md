@@ -85,7 +85,7 @@ This SaaS app allows users to edit images using IA. User can perform actions lik
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Imaginify](https://imaginify-two-orpin.vercel.app/)
+[SnapShift](https://imaginify-two-orpin.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
